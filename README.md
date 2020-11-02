@@ -1,4 +1,6 @@
-# spin-env : docker image for Spin
+spin-env
+========
+Docker image for [Spin model checker](http://spinroot.com/)
 
 ## Usage
 
@@ -27,4 +29,9 @@ spin@cb117e5bb2af:~$ gcc -o pan pan.c
 spin@cb117e5bb2af:~$ ./pan
 ```
 
+## Note
 
+The container runs bash with user `spin`.
+The password of the user is `spin`.
+
+If you would like to install some packages using apt, you should first issue `sudo apt update`.
